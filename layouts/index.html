@@ -1,371 +1,148 @@
 {{ define "main" }}
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <div class="hero-bg">
-    <div class="gradient-orb orb-1"></div>
-    <div class="gradient-orb orb-2"></div>
-    <div class="gradient-orb orb-3"></div>
-    <div class="grid-overlay"></div>
-  </div>
-
-  <div class="hero-content">
-    <div class="badge animate-fade-in">
-      <span class="badge-dot"></span>
-      Open Source AI Governance
-    </div>
-
-    <h1 class="hero-title animate-slide-up">
-      Prove What Your<br>
-      <span class="gradient-text">Agents Do</span>
-    </h1>
-
-    <p class="hero-subtitle animate-slide-up-delay">
-      Open-source runtime governance for AI agents. Bind agents to missions,<br>
-      enforce boundaries, emit verifiable evidence.
-    </p>
-
-    <div class="hero-cta animate-slide-up-delay-2">
-      <a href="#products" class="btn btn-primary">
-        <span>Explore Products</span>
-        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
+<div class="docs-container">
+  <header class="docs-header">
+    <div class="container header-content">
+      <a href="/" class="logo">
+        <img src="/images/logo.svg" alt="ArdurAI" width="32" height="32">
+        <span>ArdurAI</span>
       </a>
-      <a href="https://github.com/ArdurAI" class="btn btn-secondary">
-        <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-        <span>View on GitHub</span>
-      </a>
+      <nav class="header-nav">
+        <a href="#ardur">Ardur</a>
+        <a href="#mara">Mara</a>
+        <a href="https://github.com/ArdurAI">GitHub</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="hero-stats animate-fade-in-delay">
-      <div class="stat">
-        <span class="stat-value" data-count="2">0</span>
-        <span class="stat-label">Products</span>
-      </div>
-      <div class="stat">
-        <span class="stat-value" data-count="100">0</span>
-        <span class="stat-suffix">%</span>
-        <span class="stat-label">Open Source</span>
-      </div>
-      <div class="stat">
-        <span class="stat-value" data-count="0">0</span>
-        <span class="stat-label">Dependencies</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="scroll-indicator">
-    <div class="mouse">
-      <div class="wheel"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Products Section -->
-<section class="products" id="products">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Our Products</span>
-      <h2 class="section-title">Built for the<br><span class="gradient-text">AI Governance Era</span></h2>
-    </div>
-
-    <div class="product-grid">
-      <!-- Ardur Card -->
-      <div class="product-card" data-tilt>
-        <div class="card-glow"></div>
-        <div class="card-header">
-          <div class="product-icon ardur-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
-              <path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="24" cy="24" r="3" fill="currentColor"/>
-            </svg>
-          </div>
-          <div class="product-badges">
-            <span class="badge-python">Python</span>
-          </div>
+  <main class="docs-main">
+    <section class="hero">
+      <div class="container">
+        <h1>ArdurAI Documentation</h1>
+        <p class="subtitle">Open-source runtime governance for AI agents</p>
+        <div class="hero-links">
+          <a href="https://github.com/ArdurAI/ardur" class="btn">View Ardur</a>
+          <a href="https://github.com/ArdurAI/mara" class="btn btn-secondary">View Mara</a>
         </div>
-        <h3 class="product-name">Ardur</h3>
-        <p class="product-desc">Open-source runtime governance for AI agents — prove what your agents do, not just what they say.</p>
-        <ul class="product-features">
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mission binding</li>
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Policy enforcement</li>
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Signed receipts</li>
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Cryptographic chains</li>
-        </ul>
-        <div class="product-cta">
-          <a href="https://github.com/ArdurAI/ardur" class="btn btn-full">
-            <span>View on GitHub</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+      </div>
+    </section>
+
+    <section id="ardur" class="docs-section">
+      <div class="container">
+        <h2>Ardur — Runtime Governance</h2>
+        <p class="section-desc">Governance proxy for AI agents. Enforces policy boundaries and emits signed receipts.</p>
+
+        <div class="card-grid">
+          <a href="https://github.com/ArdurAI/ardur/tree/main/docs" class="card">
+            <h3>Getting Started</h3>
+            <p>Installation, quickstart, and basic concepts</p>
+          </a>
+          <a href="https://github.com/ArdurAI/ardur/tree/main/docs/guides" class="card">
+            <h3>Guides</h3>
+            <p>Step-by-step tutorials for common tasks</p>
+          </a>
+          <a href="https://github.com/ArdurAI/ardur/tree/main/docs/reference" class="card">
+            <h3>Reference</h3>
+            <p>API reference and CLI documentation</p>
+          </a>
+          <a href="https://github.com/ArdurAI/ardur/tree/main/docs/decisions" class="card">
+            <h3>Architecture</h3>
+            <p>ADRs and system design documents</p>
           </a>
         </div>
-      </div>
 
-      <!-- Mara Card -->
-      <div class="product-card" data-tilt>
-        <div class="card-glow"></div>
-        <div class="card-header">
-          <div class="product-icon mara-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 4l17.32 10v12c0 9.4-7.2 18.2-17.32 22C13.88 44.2 6.68 35.4 6.68 26V14L24 4z" stroke="currentColor" stroke-width="2" fill="none"/>
-              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
-              <path d="M24 20v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="product-badges">
-            <span class="badge-rust">Rust</span>
-          </div>
+        <div class="code-block">
+          <pre><code># Quickstart
+git clone https://github.com/ArdurAI/ardur.git && cd ardur
+make demo
+
+# Run verification
+./scripts/verify-mvp.sh</code></pre>
         </div>
-        <h3 class="product-name">Mara</h3>
-        <p class="product-desc">AI-native log shipper and telemetry agent for AI agents and LLM workloads — Fluent Bit for AI.</p>
-        <ul class="product-features">
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>OpenTelemetry gen_ai.*</li>
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>WASM policy engine</li>
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>PII/PHI redaction</li>
-          <li><svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>10+ output sinks</li>
-        </ul>
-        <div class="product-cta">
-          <a href="https://github.com/ArdurAI/mara" class="btn btn-full">
-            <span>View on GitHub</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+      </div>
+    </section>
+
+    <section id="mara" class="docs-section">
+      <div class="container">
+        <h2>Mara — AI Log Shipper</h2>
+        <p class="section-desc">Edge-deployable telemetry agent for AI workloads. OpenTelemetry gen_ai.* native.</p>
+
+        <div class="card-grid">
+          <a href="https://github.com/ArdurAI/mara/tree/main/plans/07-quickstarts" class="card">
+            <h3>Quickstarts</h3>
+            <p>Claude Code, Codex, Cursor, Kimi, Ollama</p>
+          </a>
+          <a href="https://github.com/ArdurAI/mara/tree/main/plans/06-deployment-blueprints" class="card">
+            <h3>Deployment</h3>
+            <p>macOS, Linux, Windows, Kubernetes, Docker</p>
+          </a>
+          <a href="https://github.com/ArdurAI/mara/tree/main/docs" class="card">
+            <h3>Engineering</h3>
+            <p>ADRs, runbooks, and technical reference</p>
+          </a>
+          <a href="https://github.com/ArdurAI/mara/blob/main/INSTALL.md" class="card">
+            <h3>Install Guide</h3>
+            <p>Build from source and verification</p>
           </a>
         </div>
+
+        <div class="code-block">
+          <pre><code># Build from source
+git clone https://github.com/ArdurAI/mara.git && cd mara
+cargo build --release
+
+# Run
+./target/release/mara run</code></pre>
+        </div>
       </div>
+    </section>
+
+    <section class="ecosystem">
+      <div class="container">
+        <h2>Ecosystem</h2>
+        <table class="ecosystem-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Repository</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Governance Runtime</td>
+              <td><a href="https://github.com/ArdurAI/ardur">ardur</a></td>
+              <td><span class="status-badge status-pre">Pre-release</span></td>
+            </tr>
+            <tr>
+              <td>Log Shipper</td>
+              <td><a href="https://github.com/ArdurAI/mara">mara</a></td>
+              <td><span class="status-badge status-pre">Pre-release</span></td>
+            </tr>
+            <tr>
+              <td>Claude Code Plugin</td>
+              <td><a href="https://github.com/ArdurAI/ardur/tree/main/plugins/claude-code">ardur/plugins/claude-code</a></td>
+              <td><span class="status-badge status-available">Available</span></td>
+            </tr>
+            <tr>
+              <td>Personal Hub CLI</td>
+              <td><a href="https://github.com/ArdurAI/ardur/tree/main/python/vibap">ardur/python/vibap</a></td>
+              <td><span class="status-badge status-available">Available</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="docs-footer">
+    <div class="container">
+      <p>
+        <a href="https://github.com/ArdurAI">GitHub</a> ·
+        <a href="https://github.com/orgs/ArdurAI/discussions">Discussions</a> ·
+        <a href="https://github.com/orgs/ArdurAI/issues">Issues</a>
+      </p>
+      <p class="license">Ardur: MIT License · Mara: Apache 2.0 License</p>
     </div>
-  </div>
-</section>
-
-<!-- How It Works Section -->
-<section class="how-it-works" id="how-it-works">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">How It Works</span>
-      <h2 class="section-title">Governance That<br><span class="gradient-text">Actually Works</span></h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">1</div>
-        <div class="timeline-content">
-          <h3>Declare Mission</h3>
-          <p>Define scope, tools, resources, and budgets in a cryptographically signed mission document.</p>
-          <div class="code-preview">
-            <pre><code>mission {
-  scope: "code-generation"
-  tools: ["file_write", "shell_read"]
-  budget: { tokens: 100000 }
-}</code></pre>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">2</div>
-        <div class="timeline-content">
-          <h3>Runtime Enforcement</h3>
-          <p>Every tool call flows through the governance proxy. Policies are checked before execution.</p>
-          <div class="stat-highlight">
-            <span class="stat-big">~4ms</span>
-            <span class="stat-desc">overhead per call</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">3</div>
-        <div class="timeline-content">
-          <h3>Signed Receipts</h3>
-          <p>Each action produces a cryptographically signed receipt, chained to the previous one.</p>
-          <div class="receipt-chain">
-            <div class="receipt">Receipt 1</div>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            <div class="receipt">Receipt 2</div>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            <div class="receipt receipt-last">Receipt 3</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item" data-animate>
-        <div class="timeline-marker">4</div>
-        <div class="timeline-content">
-          <h3>Verify Evidence</h3>
-          <p>Anyone can verify the chain of custody, policy decisions, and agent behavior.</p>
-          <div class="verification-badges">
-            <div class="verify-badge">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              <span>Cryptographic</span>
-            </div>
-            <div class="verify-badge">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              <span>Verifiable</span>
-            </div>
-            <div class="verify-badge">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              <span>Public</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Live Demo Section -->
-<section class="demo-section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Live Demo</span>
-      <h2 class="section-title">See It In <span class="gradient-text">Action</span></h2>
-    </div>
-
-    <div class="terminal-container">
-      <div class="terminal-header">
-        <div class="terminal-buttons">
-          <span class="terminal-btn red"></span>
-          <span class="terminal-btn yellow"></span>
-          <span class="terminal-btn green"></span>
-        </div>
-        <span class="terminal-title">ardur demo</span>
-      </div>
-      <div class="terminal-body">
-        <div class="terminal-content" id="terminal-content">
-          <span class="prompt">$</span> <span class="command">ardur demo --interactive</span><br>
-          <span class="output">Initializing governance runtime...</span><br>
-        </div>
-      </div>
-    </div>
-
-    <div class="demo-controls">
-      <button class="demo-btn" data-action="allow">Allow Action</button>
-      <button class="demo-btn deny" data-action="deny">Deny Action</button>
-      <button class="demo-btn" data-action="verify">Verify Receipt</button>
-    </div>
-  </div>
-</section>
-
-<!-- Stats Section -->
-<section class="stats-section">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-card" data-animate>
-        <div class="stat-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="24" cy="24" r="12"/>
-            <path d="M12 24h24M24 12v24"/>
-          </svg>
-        </div>
-        <span class="stat-number" data-count="39">0</span>
-        <span class="stat-label">Tool Calls Tested</span>
-        <span class="stat-desc">Across multiple models</span>
-      </div>
-
-      <div class="stat-card" data-animate>
-        <div class="stat-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 8v16l8 8 16-16V8"/>
-          </svg>
-        </div>
-        <span class="stat-number" data-count="0">0</span>
-        <span class="stat-label">Unauthorized Actions</span>
-        <span class="stat-desc">Zero false denials</span>
-      </div>
-
-      <div class="stat-card" data-animate>
-        <div class="stat-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="24" cy="24" r="8"/>
-            <circle cx="24" cy="24" r="16" stroke-dasharray="4 4"/>
-          </svg>
-        </div>
-        <span class="stat-number" data-count="4">0</span>
-        <span class="stat-suffix">ms</span>
-        <span class="stat-label">Avg Overhead</span>
-        <span class="stat-desc">Per tool call</span>
-      </div>
-
-      <div class="stat-card" data-animate>
-        <div class="stat-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M24 4v40M4 24h40"/>
-            <circle cx="24" cy="24" r="12"/>
-          </svg>
-        </div>
-        <span class="stat-number" data-count="100">0</span>
-        <span class="stat-suffix">%</span>
-        <span class="stat-label">Open Source</span>
-        <span class="stat-desc">MIT & Apache 2.0</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Community Section -->
-<section class="community" id="community">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">Community</span>
-      <h2 class="section-title">Join the<br><span class="gradient-text">Movement</span></h2>
-    </div>
-
-    <div class="community-grid">
-      <div class="community-card">
-        <div class="community-icon">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-          </svg>
-        </div>
-        <h3>GitHub</h3>
-        <p>Star our repos, file issues, contribute code</p>
-        <a href="https://github.com/ArdurAI" class="link-arrow">Follow →</a>
-      </div>
-
-      <div class="community-card">
-        <div class="community-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-          </svg>
-        </div>
-        <h3>Discussions</h3>
-        <p>Join conversations, ask questions, share ideas</p>
-        <a href="https://github.com/orgs/ArdurAI/discussions" class="link-arrow">Discuss →</a>
-      </div>
-
-      <div class="community-card">
-        <div class="community-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-          </svg>
-        </div>
-        <h3>Issues</h3>
-        <p>Report bugs, request features, help improve</p>
-        <a href="https://github.com/orgs/ArdurAI/issues" class="link-arrow">Contribute →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-content">
-      <h2>Ready to Get Started?</h2>
-      <p>Join the future of AI governance. Open source, transparent, verifiable.</p>
-      <div class="cta-buttons">
-        <a href="https://github.com/ArdurAI/ardur" class="btn btn-primary btn-large">
-          Start with Ardur
-        </a>
-        <a href="https://github.com/ArdurAI/mara" class="btn btn-secondary btn-large">
-          Try Mara
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+  </footer>
+</div>
 {{ end }}
