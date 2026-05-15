@@ -1,6 +1,7 @@
 baseURL = 'https://ardurai.github.io/'
 languageCode = 'en-us'
 title = 'ArdurAI — Open-Source AI Governance'
+publishDir = '.'
 
 [params]
   description = 'Open-source runtime governance for AI agents — prove what your agents do, not just what they say.'
