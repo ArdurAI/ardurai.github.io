@@ -1,0 +1,28 @@
+baseURL = 'https://ardurai.github.io/'
+languageCode = 'en-us'
+title = 'ArdurAI — Open-Source AI Governance'
+
+[params]
+  description = 'Open-source runtime governance for AI agents — prove what your agents do, not just what they say.'
+  author = 'ArdurAI'
+
+[menu]
+  [[menu.main]]
+    name = 'Products'
+    url = '#products'
+    weight = 1
+  [[menu.main]]
+    name = 'How It Works'
+    url = '#how-it-works'
+    weight = 2
+  [[menu.main]]
+    name = 'Documentation'
+    url = '#docs'
+    weight = 3
+  [[menu.main]]
+    name = 'Community'
+    url = '#community'
+    weight = 4
+
+[build]
+  writeStats = true
